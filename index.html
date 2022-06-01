@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CSS files needed -->
+    <link rel="stylesheet" href="css/0_General_styling.css" />
+    <link rel="stylesheet" href="css/1_navBar.css" />
+    <link rel="stylesheet" href="css/2_homeSection.css" />
+    <link rel="stylesheet" href="css/3_aboutSection.css" />
+    <link rel="stylesheet" href="css/4_aboutSmallerScreens.css" />
+    <link rel="stylesheet" href="css/5_aboutSmallestScreens.css" />
+    <!-- Older Font awesome library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Latest awesome library-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aris Empanta</title>
+  </head>
+  <!-- Javascript files needed-->
+
+  <script src="js/2_HomeSection.js"></script>
+  <script src="js/3_AboutSection.js"></script>
+  <body>
+    <!-- Navigation bar section-->
+    <div class="navBar" id="navWrapper">
+      <div class="navBarSection sectionHome">
+        <a class="homeIcon" href="#Home"><i class="fa-solid fa-house"></i></a>
+      </div>
+      <div id="menuBar" onclick="getResponsive()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="navBarSection restSections" id="about">
+        <a class="links" href="#About"> About </a>
+      </div>
+      <div class="navBarSection restSections" id="projects">
+        <a class="links" href="#"> Project </a>
+      </div>
+      <div class="navBarSection restSections" id="contact">
+        <a class="links" href="#"> Contact </a>
+      </div>
+    </div>
+    <!-- Home Section-->
+    <div id="Home">
+      <h1 id="name" class="gradient-text">Aris Empanta</h1>
+      <h3 id="job">web developer</h3>
+    </div>
+    <!--About Section-->
+    <div id="About">
+      <div id="description">
+        <h1 id="Hello">Hello!</h1>
+        <p id="mySelf1">
+          <br />&nbsp;&nbsp;I'm Aris, a self-taught &nbsp;developer. I<br />
+          love programming, &nbsp;problem solving<br />
+          and building websites.
+          <br />
+        </p>
+        <p id="mySelf2">
+          Here you can see my skillset :&nbsp;
+          <span id="rightArrow"><i class="fa-solid fa-angles-right"></i></span>
+          <span id="downArrow"><i class="fa-solid fa-angles-down"></i></span>
+        </p>
+      </div>
+      <!--The list of my skills appearing in smaller screens-->
+      <div id="skillsListed">
+        <ul id="skillsUl">
+          <li class="skills" id="frontEnd1">
+            <img
+              class="skillIcons"
+              src="css/My_skills_Pics/html_css_js.jpg"
+            />&nbsp;&nbsp;Html, CSS, Javascript
+          </li>
+          <br /><br />
+          <li class="skills" id="frontEnd2">
+            <img
+              class="skillIcons"
+              src="css/My_skills_Pics/bootstrap.jpg"
+            />&nbsp;&nbsp;Bootstrap
+          </li>
+          <br /><br />
+          <li class="skills" id="frontEnd3">
+            <img
+              class="skillIcons"
+              src="css/My_skills_Pics/react-redux.png"
+            />&nbsp;&nbsp;React, Redux
+          </li>
+          <br /><br />
+          <li class="skills" id="Backend1">
+            <img
+              class="skillIcons"
+              src="css/My_skills_Pics/php_logo.png"
+            />&nbsp;&nbsp;PHP
+          </li>
+          <br /><br />
+          <li class="skills" id="Backend2">
+            <img
+              class="skillIcons"
+              src="css/My_skills_Pics/mysql.jpg"
+            />&nbsp;&nbsp;SQL
+          </li>
+          <br /><br />
+          <li class="skills" id="Github">
+            <img
+              class="skillIcons"
+              src="css/My_skills_Pics/git_github.jpg"
+            />&nbsp;&nbsp;Git & Github
+          </li>
+        </ul>
+      </div>
+      <!--The image rotating gallery for the larger screens-->
+      <div class="boxContainer">
+        <div class="box">
+          <div class="side s1">
+            <span class="arrowLeft" onclick="turnLeft()"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrowRight" onclick="turnRight()"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </div>
+          <div class="side s2">
+            <span class="arrowLeft" onclick="turnLeft()"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrowRight" onclick="turnRight()"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </div>
+          <div class="side s3">
+            <span class="arrowLeft" onclick="turnLeft()"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrowRight" onclick="turnRight()"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </div>
+          <div class="side s4">
+            <span class="arrowLeft" onclick="turnLeft()"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrowRight" onclick="turnRight()"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </div>
+          <div class="side s5">
+            <span class="arrowLeft" onclick="turnLeft()"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrowRight" onclick="turnRight()"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </div>
+          <div class="side s6">
+            <span class="arrowLeft" onclick="turnLeft()"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="arrowRight" onclick="turnRight()"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Other Javascript files needed-->
+    <script src="js/1_navBar.js"></script>
+  </body>
+</html>

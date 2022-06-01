@@ -1,0 +1,76 @@
+
+/*Setting the height of the Home section.*/
+#Home { 
+    height: 755px;
+    background-image: url(wallpaper.jpg);
+  
+}
+
+/* The styling for my name: ARIS EMPANTA*/
+#name {
+    text-align: center;
+    padding-top: 400px;
+    font-size: 75px;
+    font-weight: 900;   
+    color: darkcyan;
+    text-shadow:
+      0 0 5px azure,
+      0 0 8px azure,
+      0 0 16px azure,
+      0 0 42px darkcyan,
+      0 0 82px darkcyan,
+      0 0 92px darkcyan,
+      0 0 102px darkcyan;
+    opacity: 0;    
+    transition: opacity 1.5s, padding-top 1s; 
+  } 
+  
+  /*The styling of the label :  Web Developer under my name*/
+  #job {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #C71585;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 8px #fff,
+      0 0 16px #C71585,
+      0 0 42px #C71585,
+      0 0 82px #C71585,
+      0 0 92px #C71585,
+      0 0 102px #C71585; 
+    opacity: 0;
+  }
+  
+  /*The class causing the bouncy entrance of my job title, 
+  injected in the element through javascript.*/
+  .jobAnimationEnter {
+    animation-name: moveAndBounce;
+    animation-duration: 2s; 
+  }
+
+  @keyframes moveAndBounce {
+    0% { 
+      transform: scale(1, 1) translateX( -60px); 
+    }    
+    40% {
+      transform: scale(0.8, 1.4)  translateX( 60px);      
+    } 
+    70% {
+      transform: scale(1.2, 0.8)  translateX( -30px);      
+    }
+    100% {
+      transform: scale(1, 1)  translateX(0);      
+    } 
+    
+  }
+
+  /*Adjusting the name and job title for small screens.*/
+  @media (max-width: 600px){
+    #name {
+      font-size: 55px;
+    }
+    #job {
+      font-size: 35px;
+    }
+  }

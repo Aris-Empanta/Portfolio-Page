@@ -1,0 +1,119 @@
+/*Styling the navigation bar*/
+.navBar {
+    margin: 0;
+    background: linear-gradient( #7FFFD4, turquoise, #008B8B);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+/*Removing default styling from navbar anchor elements*/
+.navBarSection a {
+    position: relative;
+    color: #1F2833;
+    text-decoration: none;
+}
+
+/*Below we create the underline animation on hover*/
+.navBarSection .links:after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: '';
+    text-decoration: none;
+    height: 3px;
+    width: 0;
+    background-color: #C71585;
+    transition: width 0.30s;
+}
+
+.navBarSection .links:hover:after {
+    width: 100%;    
+}
+
+.navBarSection .links:hover{
+    color:#1F2833;
+    text-decoration: none;
+}
+
+/*The hover effect for the home icon*/
+.navBarSection .homeIcon:hover{
+    color:#C71585;    
+}
+
+
+/*Gener styling of navbar sections*/
+.navBarSection {
+    font-size: x-large;
+    
+}
+
+/*Styling of the navBar home icon*/
+.sectionHome {
+    display: block;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 0; 
+    text-decoration: none;
+    font-size: 3rem;
+    
+}
+
+/*On large screen, the bar icon that expands the section menu will not be visible*/
+#menuBar {
+    display: none;
+}
+
+/*Styling all navBar section elements except the home icon*/
+.restSections {
+    display: block;
+    float: left;
+    margin: 25px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*Making adjustments for smaller screens*/
+@media (max-width: 700px) {
+    .restSections {
+        display: none;
+    }
+
+    .sectionHome {
+        margin-top: 7px;
+        font-size: 2.5rem;
+    }
+
+    #menuBar {
+        display: block;
+        padding-left: 25px; 
+        padding-top: 15px;
+        margin-bottom: 17px;
+        text-decoration: none;
+        font-size: xx-large;
+        cursor: pointer;
+        
+    }
+}
+
+/*Adjusting the navbar for smaller screens*/
+@media (max-width: 700px) {
+    .navBar.showMenu .restSections {
+        
+        display: block;
+        margin:0;
+        padding-top: 5px;
+        padding-left: 25px;
+        height: 50px;
+        float: none;        
+        text-decoration: none;
+        background-color: #008B8B;
+        font-size: 0;
+        transition: font-size 0.5s;
+    }
+}

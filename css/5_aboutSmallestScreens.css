@@ -1,0 +1,83 @@
+/*The styling for screens up to 700px*/
+@media (max-width: 700px){
+    
+    /*The outer div of the about section*/
+    #About {
+        padding-top:200px; 
+    }
+
+    /*The styling of the 'Hello I am Aris' header*/
+    #Hello{         
+    font-size: 5.5rem;
+    }
+
+
+    /*The first paragraph of description of myself under the Hello header.*/
+    #mySelf1 {
+    font-size: 1.3rem; 
+    }  
+
+    /*The second paragraph of description of myself.*/
+    #mySelf2 {  
+    font-size: 1.3rem;
+    
+    }   
+
+    /*The outer div of the rotating 3D image gallery*/  
+    .boxContainer {
+    display: none;
+    }
+
+    /*The magenta arrow on description section disappear to be replaced with the down arrow*/
+    #rightArrow {
+    display: none;
+    }
+
+    /*The down arrow in description paragraph*/
+    #downArrow {
+    display:initial;
+    }
+
+    /*The outer div of my skills list*/
+    #skillsListed {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background-image: url(wallpaper.jpg);
+    }
+
+    /*The outer ul of the skills list items*/
+    #skillsUl{
+        list-style: none;
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: opacity 1s, transform 1s;
+    }
+     
+    /*The icons in front of listed skills*/ 
+    .skillIcons {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 3px solid #C71585;
+    }
+     
+    /*The skill list*/
+    .skills{
+        background: linear-gradient(white, #dcdcdc ,silver);   
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: 'Georgia', serif;        
+    }
+    
+    /*The class that will make the skills letters go back and forth*/
+    .backAndForth {
+        transform: translateX(10px);
+        transition: transform 0.05s;
+    }
+
+}

@@ -1,0 +1,222 @@
+/*The outer div of the about section*/
+#About {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(wallpaper.jpg);
+}
+
+/*The styling of the 'Hello I am Aris' header*/
+#Hello {    
+    background: linear-gradient(#7FFFD4 , darkcyan);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px #C71585)
+            drop-shadow(2px 2px #C71585)
+            drop-shadow(3px 3px #C71585)            
+            drop-shadow(10px 10px 1px rgb(0,0,0, 0.8));           
+    font-size: 8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0, 0);
+    transition: opacity 1s, transform 1s;
+  }
+
+
+/*The first paragraph of description of myself under the Hello header.*/
+#mySelf1 {
+    color: #dcdcdc;
+    font-size: 1.7rem;
+    font-family: 'Georgia', serif;
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 1s, transform 1s;
+  }  
+  
+/*The second paragraph of description of myself.*/
+#mySelf2 {
+    color: #dcdcdc;
+    font-size: 1.7em;
+    font-family: 'Georgia', serif;
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 1s, transform 1s;
+  }
+
+/*The arrow pointing to my skills for smaller screens*/
+#rightArrow {
+   position: relative;
+    color: #FF00CD;
+    font-size: 1.3em;
+    margin-top: 5px;   
+    font-weight: 900;    
+    animation-name: movingRightArrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*The animation that moves the right arrow back and forth*/
+@keyframes movingRightArrow {
+  0% {
+    padding-left: 0;
+  }
+  50% {
+    padding-left: 5px;
+  }
+  100% {
+    padding-left: 0;
+  }
+}
+  
+/*The arrow pointing to my skills for smaller screens*/
+#downArrow {
+    position: absolute;
+    display: none;
+    color: #ff1dce;
+    font-size: 1.3em;
+    animation-name: movingDownArrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: translateX(5px);
+  }
+
+  /*The animation that moves the right arrow up and down*/
+  @keyframes movingDownArrow {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 5px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }  
+  
+/*The list of my skills for smaller screens*/
+#skillsListed {
+    display: none;
+  }
+
+/*Adjusting the position of the arrow that turns the skills-rotating-image-galery
+  to the left.*/
+.arrowLeft {
+    position: absolute;
+    top: 55%;
+    right: 90%;
+    background-color: transparent;
+    border: none;
+  }
+  
+/*Styling the fontawesome left arow that exists inside the .arrowLeft span element*/
+.fa-chevron-left {
+    font-size: 1.8em;
+    color: #1F2833;
+  } 
+
+/*Adjusting the position of the arrow that turns the skills-rotating-image-galery
+  to the right.*/
+.arrowRight {
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    background-color: transparent;
+    border: none;
+  }
+
+/*Styling the fontawesome left arow that exists inside the .arrowRight span element*/
+.fa-chevron-right {
+    font-size: 1.8em;
+    color: #1F2833;
+  }
+  
+/*The word 'side' inside my description text*/
+#side {
+    color: fuchsia;
+    font-weight: 800;
+  }
+
+  
+  
+/*The outer div of the rotating 3D image gallery*/  
+.boxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: rotateX(-13deg);
+    width: 50%;
+    height: 90vh
+  }
+
+/*The div that contains the 3D image gallery pics.*/
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    transform-style: preserve-3d;  
+    transform: rotateY(0deg);
+    
+    transition: transform 1s;    
+  }
+
+/*general positioning of all the images of the 3D Rotating image gallery*/
+.side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: -8px -8px 12px BLACK;
+  }
+  
+ 
+/*The 6 classes bellow, is for the styling of the 6 pictures in the 3D rotating image gallery.*/
+.s1 {
+    background-image: url(My_skills_Pics/html_css_js.jpg);
+    border-radius: 5%;
+    width: 120%;
+    transform: rotateY(0deg) rotateX(-3deg) translateZ(250px);
+  }
+  
+.s2 {
+    background-image: url(My_skills_Pics/bootstrap.jpg);
+    border-radius: 5%;
+    width: 120%;
+    transform: rotateY(60deg) rotateX(-3deg) translateZ(250px);
+  }
+  
+.s3 {
+    background-image: url(My_skills_Pics/react-redux.png);
+    border-radius: 5%;
+    width: 120%;
+    transform: rotateY(120deg) rotateX(-3deg) translateZ(250px);
+  }
+  
+.s4 {
+    background-image: url(My_skills_Pics/php_logo.png);
+    border-radius: 5%;
+    width: 120%;
+    transform: rotateY(180deg) rotateX(-3deg) translateZ(250px);
+  }
+  
+.s5 {
+    background-image: url(My_skills_Pics/mysql.jpg);
+    border-radius: 5%;
+    width: 120%;
+    transform: rotateY(240deg) rotateX(-3deg) translateZ(250px);
+  }
+  
+.s6 {
+    background-image: url(My_skills_Pics/git_github.jpg);
+    border-radius: 5%;
+    width: 120%;
+    transform: rotateY(300deg) rotateX(-3deg) translateZ(250px);
+  }

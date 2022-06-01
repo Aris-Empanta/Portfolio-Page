@@ -1,0 +1,87 @@
+@media all and  (min-width: 701px) and (max-width: 1100px) {
+      
+    /*The styling of the 'Hello I am Aris' header*/
+    #Hello{         
+      font-size: 7rem;
+    }
+
+
+    /*The first paragraph of description of myself under the Hello header.*/
+    #mySelf1 {
+      font-size: 1.7rem; 
+    }  
+
+    /*The second paragraph of description of myself.*/
+    #mySelf2 {  
+      font-size: 1.7em;
+      margin-bottom: 300px;
+    }
+
+    /*The outer div of the rotating 3D image gallery*/  
+    .boxContainer {
+        display: none;
+    }
+    
+    /*The down arrow in description paragraph*/
+    #downArrow {
+      display:initial;
+    }
+    
+    /*The magenta arrow on description section disappear to be replaced with the down arrow*/
+    #rightArrow {
+      display: none;
+    }    
+    
+    /*The outer div of the about section*/
+    #About {
+      height: 1050px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding-top:100px; 
+      
+    }
+    
+    /*The outer div of my skills list*/
+    #skillsListed {
+      height: 600px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      background-image: url(wallpaper.jpg);
+    }
+    
+    /*The outer ul of the skills list items*/
+    #skillsUl{
+      list-style: none;
+      opacity: 0;
+      transform: translateX(-60px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    /*The icons in front of listed skills*/ 
+    .skillIcons {
+        width: 45px;
+        height: 45px;
+        border-radius: 45%;
+        border: 3px solid #C71585;
+    }
+    
+    /*The skill list*/
+    .skills{
+      background: linear-gradient(white, #dcdcdc ,silver);   
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2rem;
+      font-family: 'Georgia', serif;
+      font-weight: 600;
+    }
+
+    /*The class that will make the skills letters go back and forth*/
+    .backAndForth {
+      transform: translateX(10px);
+      transition: transform 0.05s;
+  }
+}
