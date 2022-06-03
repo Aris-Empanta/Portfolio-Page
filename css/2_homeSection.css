@@ -1,24 +1,22 @@
-
 /*Setting the height of the Home section.*/
 #Home { 
     height: 755px;
-    background-image: url(wallpaper.jpg);
-  
+    background-image: url(wallpaper.jpg);  
 }
 
 /* The styling for my name: ARIS EMPANTA*/
-#name {
+#name {   
     text-align: center;
     padding-top: 400px;
     font-size: 75px;
-    font-weight: 900;   
+    font-weight: 700;   
     color: darkcyan;
     text-shadow:
-      0 0 5px azure,
-      0 0 8px azure,
-      0 0 16px azure,
-      0 0 42px darkcyan,
-      0 0 82px darkcyan,
+      0 0 5px #fff,
+      0 0 8px #fff,
+      0 0 16px #fff,
+      0 0 42px turquoise,
+      0 0 82px turquoise,
       0 0 92px darkcyan,
       0 0 102px darkcyan;
     opacity: 0;    
@@ -28,7 +26,7 @@
   /*The styling of the label :  Web Developer under my name*/
   #job {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
     color: #C71585;
     text-shadow:
