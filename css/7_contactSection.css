@@ -25,14 +25,13 @@
 #formContainer {
     position: relative;
     border-radius: 5px;
-
-  padding: 30px;
-  width: 66%;
-  margin-top: 60px;
-  margin-left: 17%;
-  margin-right: 17%;
-  border: 4px solid #C71585;
-  background: linear-gradient(to bottom right, black, #353d47, black);
+    padding: 30px;
+    width: 66%;
+    margin-top: 60px;
+    margin-left: 17%;
+    margin-right: 17%;
+    border: 4px solid #C71585;
+    background: linear-gradient(to bottom right, black, #353d47, black);
 }
 
 
@@ -65,4 +64,16 @@
 
 #message {
     margin-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+    #sendMeTitle {
+        font-size: 3rem;
+    }   
+
+    #formContainer {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }

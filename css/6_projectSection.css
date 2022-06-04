@@ -8,6 +8,7 @@
     background-color: #0B0C10;
     border-top: 4px solid turquoise;
     border-bottom: 4px solid turquoise; 
+   
     
 }
 
@@ -113,6 +114,7 @@
         "project3 project3";
     }
 
+   
  
 }
 
@@ -124,6 +126,10 @@
         grid-template-areas: "header"
                               "project1"
                               "project2"
-                              "project3";       
+                              "project3";                                   
     }  
+
+    #myWorkTitle {
+        font-size: 3rem;
+    }
 }
