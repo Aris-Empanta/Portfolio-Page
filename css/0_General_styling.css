@@ -1,11 +1,5 @@
 /*This is the styling of general elements such as body.*/
 
-/*We ensure that the padding and border are included in the total width and height of the elements.*/
-* {
-  box-sizing: border-box;
-}
-
-
 /*To remove the white gap on the right side of the page once minimize.
  Also to make scrolling smooth, and remove default body values.*/
 html,body {
