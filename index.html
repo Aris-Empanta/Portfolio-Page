@@ -37,19 +37,35 @@
     <!-- Navigation bar section-->
     <div class="navBar" id="navWrapper">
       <div class="navBarSection sectionHome">
-        <a class="homeIcon" href="#Home"><i class="fa-solid fa-house"></i></a>
+        <a onclick="hideMenu()" class="homeIcon" href="#Home"
+          ><i class="fa-solid fa-house"></i
+        ></a>
       </div>
       <div id="menuBar" onclick="getResponsive()">
         <i class="fa fa-bars"></i>
       </div>
       <div class="navBarSection restSections" id="about">
-        <a class="links" href="#About"> About </a>
+        <a onclick="hideMenu()" class="links" href="#About"> About </a>
       </div>
       <div class="navBarSection restSections" id="projects">
-        <a class="links" href="#projectsSection"> Projects </a>
+        <a onclick="hideMenu()" class="links" href="#projectsSection">
+          Projects
+        </a>
       </div>
       <div class="navBarSection restSections" id="contact">
-        <a class="links" href="#contactSection"> Contact </a>
+        <a onclick="hideMenu()" class="links" href="#contactSection">
+          Contact
+        </a>
+      </div>
+      <div class="navBarSection restSections" id="github">
+        <a
+          onclick="hideMenu()"
+          class="links"
+          href="https://github.com/Aris-Empanta"
+          target="_blank"
+        >
+          Github
+        </a>
       </div>
     </div>
     <!-- Home Section-->
@@ -108,7 +124,7 @@
             <img
               class="skillIcons"
               src="css/My_skills_Pics/mysql.jpg"
-            />&nbsp;&nbsp;SQL
+            />&nbsp;&nbsp;MySQL
           </li>
           <br /><br />
           <li class="skills" id="Github">

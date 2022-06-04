@@ -47,7 +47,7 @@
 
 /*Gener styling of navbar sections*/
 .navBarSection {
-    font-size: x-large;
+    font-size: 1.6rem;
     
 }
 
@@ -75,7 +75,7 @@
     float: left;
     margin: 25px 25px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /*Making adjustments for smaller screens*/
@@ -103,8 +103,7 @@
 
 /*Adjusting the navbar for smaller screens*/
 @media (max-width: 700px) {
-    .navBar.showMenu .restSections {
-        
+    .navBar.showMenu .restSections {        
         display: block;
         margin:0;
         padding-top: 5px;
