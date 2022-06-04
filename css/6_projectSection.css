@@ -6,8 +6,8 @@
                           "project1 project2 project3";
     grid-template-rows: 300px 500px ;
     background-color: #0B0C10;
-    border-top: 4px inset #66FCF1;
-    border-bottom: 4px outset #66FCF1; 
+    border-top: 4px solid turquoise;
+    border-bottom: 4px solid turquoise; 
     
 }
 

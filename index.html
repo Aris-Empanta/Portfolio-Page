@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/4_aboutSmallerScreens.css" />
     <link rel="stylesheet" href="css/5_aboutSmallestScreens.css" />
     <link rel="stylesheet" href="css/6_projectSection.css" />
+    <link rel="stylesheet" href="css/7_contactSection.css" />
     <!-- Older Font awesome library-->
     <link
       rel="stylesheet"
@@ -29,7 +30,6 @@
     <title>Aris Empanta</title>
   </head>
   <!-- Javascript files needed-->
-
   <script src="js/2_HomeSection.js"></script>
   <script src="js/3_AboutSection.js"></script>
   <script src="js/4_projectSection.js"></script>
@@ -49,7 +49,7 @@
         <a class="links" href="#projectsSection"> Projects </a>
       </div>
       <div class="navBarSection restSections" id="contact">
-        <a class="links" href="#"> Contact </a>
+        <a class="links" href="#contactSection"> Contact </a>
       </div>
     </div>
     <!-- Home Section-->
@@ -185,6 +185,39 @@
       </div>
       <div id="project2"><div class="myProjects"></div></div>
       <div id="project3"><div class="myProjects"></div></div>
+    </div>
+    <!--Project Section-->
+    <div id="contactSection">
+      <h1 id="sendMeTitle">Contact me</h1>
+      <div id="formContainer">
+        <form id="contactForm" action="/">
+          <input
+            class="inputFields"
+            type="text"
+            id="yourName"
+            placeholder="Name..."
+          />
+          <input
+            class="inputFields"
+            type="email"
+            id="yourEmail"
+            placeholder="Email..."
+          />
+          <input
+            class="inputFields"
+            type="text"
+            id="subject"
+            placeholder="Subject..."
+          />
+          <textarea
+            class="inputFields"
+            id="message"
+            placeholder="Your message..."
+            style="height: 200px"
+          ></textarea>
+          <input id="submitButton" type="submit" value="Send message" />
+        </form>
+      </div>
     </div>
     <!--Other Javascript files needed-->
     <script src="js/1_navBar.js"></script>

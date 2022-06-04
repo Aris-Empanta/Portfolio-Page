@@ -1,0 +1,68 @@
+@font-face{
+    font-family: neon;
+    src: url(Neon\ Future.ttf);
+}
+
+/*Setting the height of the Contact section.*/
+#contactSection { 
+    height: 1000px;
+    background-image: url(wallpaper.jpg);  
+}
+
+#sendMeTitle {
+    text-align: center;
+    padding-top: 100px;
+    color: magenta;
+    font-family: neon;
+    font-size: 5.5rem;
+    text-shadow:
+    0 0 4px magenta,
+    0 0 8px magenta,
+    0 0 16px #C71585,
+    0 0 24px #C71585;
+}
+
+#formContainer {
+    position: relative;
+    border-radius: 5px;
+
+  padding: 30px;
+  width: 66%;
+  margin-top: 60px;
+  margin-left: 17%;
+  margin-right: 17%;
+  border: 4px solid #C71585;
+  background: linear-gradient(to bottom right, black, #353d47, black);
+}
+
+
+
+.inputFields {
+    width: 100%;
+    margin-bottom: 50px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #C71585;
+    background-color: transparent;
+    
+}
+
+#submitButton {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right,magenta, turquoise);
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: absolute;
+    right:30px;
+    bottom:25px;
+}
+
+#message {
+    margin-bottom: 60px;
+}
