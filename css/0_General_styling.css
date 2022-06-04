@@ -1,6 +1,7 @@
 /*Setting a elements to scroll smoothly in the page*/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 /*Remove some default body settings and give some styling*/
