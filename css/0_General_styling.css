@@ -1,12 +1,17 @@
-/*Setting a elements to scroll smoothly in the page*/
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+/*This is the styling of general elements such as body.*/
 
-/*Remove some default body settings and give some styling*/
-body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to right, black, #1F2833 40%, black);
+/*We ensure that the padding and border are included in the total width and height of the elements.*/
+* {
+  box-sizing: border-box;
 }
+
+
+/*To remove the white gap on the right side of the page once minimize.
+ Also to make scrolling smooth, and remove default body values.*/
+html,body {
+  scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  overflow-x:hidden;
+  }
