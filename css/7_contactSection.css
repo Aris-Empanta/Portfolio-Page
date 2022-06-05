@@ -9,6 +9,7 @@
     background-image: url(wallpaper.jpg);  
 }
 
+/*The title that says: "Contact me"*/
 #sendMeTitle {
     text-align: center;
     padding-top: 100px;
@@ -22,6 +23,7 @@
     0 0 24px #C71585;
 }
 
+/*The outer div of the contact section*/
 #formContainer {
     position: relative;
     border-radius: 5px;
@@ -35,7 +37,7 @@
 }
 
 
-
+/*The form input fields*/
 .inputFields {
     width: 100%;
     margin-bottom: 50px;
@@ -44,9 +46,16 @@
     border-left: none;
     border-bottom: 1px solid #C71585;
     background-color: transparent;
-    
+    color: #dcdcdc;
+    font-size: 1.2rem;
 }
 
+ /* Removes the border when the input is clicked */
+ .inputFields:focus {
+    outline: none
+  }
+
+/*The form submit button*/
 #submitButton {
     border-radius: 10px;
     background: linear-gradient(to bottom right,magenta, turquoise);
@@ -62,10 +71,12 @@
     bottom:25px;
 }
 
+/*The text area for the message to be sent*/
 #message {
     margin-bottom: 60px;
 }
 
+/*The styling of contact section for mobile screens*/
 @media (max-width: 600px) {
     #sendMeTitle {
         font-size: 3rem;
