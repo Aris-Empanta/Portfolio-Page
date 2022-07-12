@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require("body-parser");
 const path = require('path')
 const cors = require("cors")
+const dotenv = require('dotenv').config()
 
 app.use(bodyParser.urlencoded({
   extended: false
@@ -30,13 +31,13 @@ app.post("/", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'outlook',
     auth: {
-      user: 'admiral_akainu@outlook.com',
-      pass: 'marinehq1991'
+      user: process.env.MAIL,
+      pass: process.env.PASS
     }
   });
   
   let mailOptions = {
-    from: 'admiral_akainu@outlook.com',
+    from: process.env.MAIL,
     to: 'eams220891@gmail.com',
     subject: req.body.subject,
     text: `hey bro ${req.body.name}`
