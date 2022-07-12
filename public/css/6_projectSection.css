@@ -1,0 +1,133 @@
+/*Building the project's section grid*/
+#projectsSection {
+    display: grid;
+    height: 900px;
+    grid-template-areas: "header header header"
+                          "project1 project2 project3";
+    grid-template-rows: 300px 500px ;
+    background-color: #0B0C10;
+    border-top: 4px solid turquoise;
+    border-bottom: 4px solid turquoise;   
+}
+
+/*Styling the projects' title background to have a shining animation*/
+#projectTitle {
+    grid-area: header;
+    align-self: center;
+    justify-self: center;  
+    background: linear-gradient(to right,
+        fuchsia 45%,
+        azure 50%, fuchsia 55%,
+        fuchsia 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(255, 255, 255, 0);
+    background-size: 200%;
+    animation: shine 3s infinite;    
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/*The animation that makes the title'My React Gems shine'*/
+@keyframes shine {
+
+    0% {
+     background-position: 100%;
+    }
+     
+    100% {
+     background-position: -60%;
+    }
+    
+}
+      
+/*Styling the font of the projects' title.*/  
+#myWorkTitle {
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: cursive;
+}
+  
+
+/*Below we adjust one by one the position of each project inside the grid.*/
+
+#project1 {
+    grid-area: project1;
+    align-self: center;
+    justify-self: center;
+}
+
+#project2 {
+    grid-area: project2;
+    align-self: center;
+    justify-self: center;   
+}
+
+#project3 {
+    grid-area: project3;
+    align-self: center;
+    justify-self: center;    
+}
+
+/*On hover i make my projects moving up.*/
+#project1:hover {
+    margin-top: -50px;
+  }
+
+
+#project2:hover {
+    margin-top: -25px;
+    margin-bottom: 25px;
+  }
+
+#project3:hover {
+    margin-top: -50px;
+  }  
+/*The styling for the containers of the image and the description of a project*/
+.myProjects {  
+    background: linear-gradient(to bottom right, black, #353d47, black, #353d47, black);
+    height: 425px;
+    width: 300px;
+    float: center;
+    border-radius: 3%;
+    box-shadow: 10px 10px 3px black;
+    transition: transform 1s, opacity 2s;
+    cursor: pointer;
+    text-decoration: none;  
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+
+
+/*Below I use media queries to make the grid responsive.*/
+@media all and  (min-width: 1001px) and (max-width: 1500px) {
+    /*Adjusting the grid for minimized screens*/
+    #projectsSection {
+        height: 1500px;
+        display: grid;
+        text-align: center;
+        grid-template-areas: "header header"
+        "project1 project2"
+        "project3 project3";
+    }
+
+   
+ 
+}
+
+@media (max-width: 1000px){
+    /*Adjusting the grid for mobile screens*/
+    #projectsSection {
+        display: grid;
+        height: 2000px;
+        grid-template-areas: "header"
+                              "project1"
+                              "project2"
+                              "project3";                                   
+    }  
+
+    #myWorkTitle {
+        font-size: 3rem;
+    }
+}
