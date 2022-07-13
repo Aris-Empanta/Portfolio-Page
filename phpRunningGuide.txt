@@ -1,3 +1,0 @@
-Write in CMD
-
-C:\php>php -S localhost:5000 -t d:Projects\1_final_portfolio_page
