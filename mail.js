@@ -2,7 +2,6 @@ const express = require("express")
 const app = express()
 const nodemailer = require('nodemailer');
 const bodyParser = require("body-parser");
-const path = require('path')
 const cors = require("cors")
 const dotenv = require('dotenv').config()
 
@@ -22,10 +21,6 @@ app.get("/", (req, res) => {
   res.sendFile("index.html")
 })
 
-
-
-
-
 app.post("/", (req, res) => {
 
   let transporter = nodemailer.createTransport({
@@ -40,7 +35,7 @@ app.post("/", (req, res) => {
     from: process.env.MAIL,
     to: 'eams220891@gmail.com',
     subject: req.body.subject,
-    text: `hey bro ${req.body.name}`
+    text: `Hello, I am ${req.body.name} with mail : ${req.body.email}! ${req.body.message}`
   };
 
   transporter.sendMail(mailOptions, function(error, info){
