@@ -69,20 +69,7 @@
     justify-self: center;    
 }
 
-/*On hover i make my projects moving up.*/
-#project1:hover {
-    margin-top: -50px;
-  }
 
-
-#project2:hover {
-    margin-top: -25px;
-    margin-bottom: 25px;
-  }
-
-#project3:hover {
-    margin-top: -50px;
-  }  
 /*The styling for the containers of the image and the description of a project*/
 .myProjects {  
     background: linear-gradient(to bottom right, black, #353d47, black, #353d47, black);
@@ -96,6 +83,18 @@
     text-decoration: none;  
     opacity: 0;
     transition: opacity 2s;
+}
+
+.projectPic {
+    height: 320px;
+    width: 100%;
+    border-radius: 3% 3% 0 0;   
+}
+
+.projectName {
+    color: magenta;
+    margin-top: 30px;
+    font-family: cursive;
 }
 
 
