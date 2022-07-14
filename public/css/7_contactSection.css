@@ -23,6 +23,38 @@
     0 0 24px #C71585;
 }
 
+/*Below class will add the blinking animation on "Contact Me" title*/
+.onOff {
+    animation: onOff 0.5s infinite;
+}
+
+@keyframes onOff {
+    0% {
+        color: #353d47;
+        text-shadow: none;
+    }
+    50% {
+        color: magenta;
+        text-shadow:
+            0 0 4px magenta,
+            0 0 8px magenta,
+            0 0 16px #C71585,
+            0 0 24px #C71585;
+    }
+    75% {
+        color: #353d47;
+        text-shadow: none;
+    }
+    100% {
+        color: magenta;
+        text-shadow:
+            0 0 4px magenta,
+            0 0 8px magenta,
+            0 0 16px #C71585,
+            0 0 24px #C71585;
+    }
+}
+
 /*The outer div of the contact section*/
 #formContainer {
     position: relative;
@@ -46,9 +78,11 @@
     border-left: none;
     border-bottom: 1px solid #C71585;
     background-color: transparent;
-    color: #dcdcdc;
+    color: #ff33cc;
     font-size: 1.2rem;
 }
+
+
 
  /* Removes the border when the input is clicked */
  .inputFields:focus {
@@ -69,12 +103,29 @@
     position: absolute;
     right:30px;
     bottom:25px;
+    transform: perspective(100px) translateZ(-20px);
+    animation: inOut 3s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes inOut {
+    0% {
+        transform: perspective(100px) translateZ(-5px);
+    }
+    50% {
+        transform: perspective(100px) translateZ(5px);
+    }
+    100% {
+        transform: perspective(100px) translateZ(-5px);
+    }
 }
 
 /*The text area for the message to be sent*/
 #message {
     margin-bottom: 60px;
 }
+
+
 
 /*The styling of contact section for mobile screens*/
 @media (max-width: 600px) {

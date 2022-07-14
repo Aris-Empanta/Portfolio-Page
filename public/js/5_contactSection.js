@@ -1,3 +1,5 @@
+/*Below function will send the input elements of contact form to
+the backend to send them to my email. */
 const contactForm = document.getElementById("contactForm")
 
 let name = document.getElementById("yourName")
@@ -7,7 +9,6 @@ let message = document.getElementById("message")
 
 
 contactForm.addEventListener("submit", (e) => {
-   //e.preventDefault()
 
     let formData = {
         name : name.value,
@@ -37,4 +38,27 @@ contactForm.addEventListener("submit", (e) => {
         xhr.send(JSON.stringify(formData))
     }
 
+})
+
+const firstBlinkLetter = document.getElementById("firstBlink")
+const secondBlinkLetter = document.getElementById("secondBlink")
+
+/*Below functions will add the blinking animation on "Contact Me" title
+for 2 letters.*/
+window.addEventListener("DOMContentLoaded", () => {
+    setInterval(() => {
+        firstBlinkLetter.classList.add("onOff")
+        setTimeout(() => {
+            firstBlinkLetter.classList.remove("onOff")
+        }, 500)
+    }, 3500)
+})
+
+window.addEventListener("DOMContentLoaded", () => {
+    setInterval(() => {
+        secondBlinkLetter.classList.add("onOff")
+        setTimeout(() => {
+            secondBlinkLetter.classList.remove("onOff")
+        }, 500)
+    }, 3000)
 })
