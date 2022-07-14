@@ -37,14 +37,14 @@ document.addEventListener('scroll', () => {
     setTimeout(showProjects, 1500)
 });
 
+//Below 2 functions show and hide the description of each project on hover.
 
-
-const sowDesc =  () => {  
+const showDescription =  () => {  
     let firstProjectDescription = document.getElementById("firstProjectDescription")
-    firstProjectDescription.style.opacity = 1
+    firstProjectDescription.style.opacity = 0.7
 }
 
-const hideDesc =  () => {  
+const hideDescription =  () => {  
     let firstProjectDescription = document.getElementById("firstProjectDescription")
     firstProjectDescription.style.opacity = 0
 }

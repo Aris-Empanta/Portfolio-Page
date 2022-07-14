@@ -95,10 +95,10 @@
 
 #firstProjectDescription {
     position: absolute;
-    background-color: rgb(0,150,255, 0.8);
+    background-color: rgb(0,0,0, 0.8);
     display: flex;
     justify-content: center;
-    color: white;
+    color: turquoise;
     width: 100%;
     bottom: 105px;
     opacity: 0;
@@ -106,7 +106,9 @@
     border-radius: 3% 3% 0 0;  
 }
 
-
+.projectDescriptionParagraph {
+    width : 80%;
+}
 
 /*The title of the Project*/
 .projectName {
