@@ -41,7 +41,7 @@ document.addEventListener('scroll', () => {
 
 const showDescription =  () => {  
     let firstProjectDescription = document.getElementById("firstProjectDescription")
-    firstProjectDescription.style.opacity = 0.7
+    firstProjectDescription.style.opacity = 1
 }
 
 const hideDescription =  () => {  
