@@ -1,7 +1,8 @@
 /*Setting the height of the Home section.*/
 #Home { 
-    height: 755px;
-    background-image: url(wallpaper.jpg);  
+    height: 770px;
+    background-image: url(wallpaper.jpg); 
+    border-bottom: 6px solid black inset; 
 }
 
 /* The styling for my name: ARIS EMPANTA*/

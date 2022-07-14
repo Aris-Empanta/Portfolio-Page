@@ -3,9 +3,10 @@
 /*To remove the white gap on the right side of the page once minimize.
  Also to make scrolling smooth, and remove default body values.*/
 html,body {
-  scroll-behavior: smooth;
-  margin:0;
-  padding:0;
-  text-decoration: none;
-  overflow-x:hidden;
+    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    overflow-x:hidden;
+    background-image: url(wallpaper.jpg); 
   }

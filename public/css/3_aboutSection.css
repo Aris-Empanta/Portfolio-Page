@@ -6,6 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-image: url(wallpaper.jpg);
+    border-top: 6px solid black inset;    
 }
 
 /*The styling of the 'Hello I am Aris' header*/
@@ -32,6 +33,7 @@
     color: #dcdcdc;
     font-size: 1.7rem;
     font-family: 'Georgia', serif;
+    width: 430px;
     opacity: 0;
     transform: translateX(-70px);
     transition: opacity 1s, transform 1s;

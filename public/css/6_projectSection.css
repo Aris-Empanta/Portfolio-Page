@@ -100,6 +100,44 @@
 
 
 
+@media (max-width: 499px){
+     /*Adjusting the grid for mobile screens*/
+     #projectsSection {
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+        gap: 150px;
+       justify-content: center;
+       align-items: center;                                   
+    }  
+    
+    .myProjects {
+        max-width: 85vw;
+    }
+
+    #myWorkTitle {
+        font-size: 2.5rem;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    /*Adjusting the grid for mobile screens*/
+    #projectsSection {
+        display: grid;
+        height: 2000px;
+        grid-template-areas: "header"
+                              "project1"
+                              "project2"
+                              "project3";                                   
+    }  
+
+    #myWorkTitle {
+        font-size: 3rem;
+    }
+}
+
+
 /*Below I use media queries to make the grid responsive.*/
 @media all and  (min-width: 1001px) and (max-width: 1500px) {
     /*Adjusting the grid for minimized screens*/
@@ -114,20 +152,4 @@
 
    
  
-}
-
-@media (max-width: 1000px){
-    /*Adjusting the grid for mobile screens*/
-    #projectsSection {
-        display: grid;
-        height: 2000px;
-        grid-template-areas: "header"
-                              "project1"
-                              "project2"
-                              "project3";                                   
-    }  
-
-    #myWorkTitle {
-        font-size: 3rem;
-    }
 }

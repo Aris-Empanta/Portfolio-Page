@@ -28,19 +28,18 @@ document.addEventListener('scroll', () => {
     function hello() {
         const hello = document.getElementById('Hello')
         //the number of pixels the page is scrolled down
-        const currentScrollPosition = window.pageYOffset;
+        const positionToAppear = window.innerHeight
         //The distance of the top border of the element with id=About, to the top of the parent element which is 'body' 
-        const topDistanceToParent = document.getElementById('About').offsetTop        
+        const AboutDistanceTop = document.getElementById('About').getBoundingClientRect().top     
         /*The condition below, will have as a result, the 'Hello I am Aris' phrase to appear slowly  only if scroll
          anywhere inside the About section*/
-        if(currentScrollPosition + 300 >= topDistanceToParent &&
-            currentScrollPosition <= topDistanceToParent + 600 ){           
+        if(positionToAppear >= AboutDistanceTop  ){           
         hello.style.opacity = 1
         hello.style.transform = 'scale(1, 1)'
             }
        }
 
-    setTimeout(hello, 1000)
+    setTimeout(hello, 500)
 });
 
 //With the function below, the 'mySelf1' text in about section will appear gradually
@@ -48,18 +47,17 @@ document.addEventListener('scroll', () => {
     function mySelf() {
         const mySelf = document.getElementById('mySelf1')
         //the number of pixels the page is scrolled down
-        const currentScrollPosition = window.pageYOffset;
+        const positionToAppear = window.innerHeight
         //The distance of the top border of the element with id=About, to the top of the parent element which is 'body' 
-        const topDistanceToParent = document.getElementById('About').offsetTop        
-        /*The condition below, will have as a result, the paragraph to appear slowly from the left only if scroll
-        anywhere inside the about section and a little bit above*/
-        if(currentScrollPosition + 300 >= topDistanceToParent &&
-            currentScrollPosition <= topDistanceToParent + 400 ){           
+        const AboutDistanceTop = document.getElementById('About').getBoundingClientRect().top     
+        /*The condition below, will have as a result, the 'Hello I am Aris' phrase to appear slowly  only if scroll
+         anywhere inside the About section*/
+        if(positionToAppear >= AboutDistanceTop  ){            
         mySelf.style.opacity = 1
         mySelf.style.transform = 'translateX(0)'
             }
        }
-    setTimeout(mySelf, 2000)
+    setTimeout(mySelf, 1500)
 });
 
 //With the function below, the 'mySelf2' text in about section will appear gradually
@@ -67,13 +65,12 @@ document.addEventListener('scroll', () => {
     function mySelf() {
         const mySelf = document.getElementById('mySelf2')
         //the number of pixels the page is scrolled down
-        const currentScrollPosition = window.pageYOffset;
+        const positionToAppear = window.innerHeight
         //The distance of the top border of the element with id=About, to the top of the parent element which is 'body' 
-        const topDistanceToParent = document.getElementById('About').offsetTop        
-        /*The condition below, will have as a result, the paragraph to appear slowly from the left only if scroll
-        anywhere inside the about section and a little bit above*/
-        if(currentScrollPosition + 300 >= topDistanceToParent &&
-            currentScrollPosition <= topDistanceToParent + 400  ){           
+        const AboutDistanceTop = document.getElementById('About').getBoundingClientRect().top     
+        /*The condition below, will have as a result, the 'Hello I am Aris' phrase to appear slowly  only if scroll
+         anywhere inside the About section*/
+        if(positionToAppear >= AboutDistanceTop  ){          
         mySelf.style.opacity = 1
         mySelf.style.transform = 'translateX(0)'
             }
