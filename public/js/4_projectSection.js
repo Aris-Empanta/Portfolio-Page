@@ -36,3 +36,15 @@ document.addEventListener('scroll', () => {
     }
     setTimeout(showProjects, 1500)
 });
+
+
+
+const sowDesc =  () => {  
+    let firstProjectDescription = document.getElementById("firstProjectDescription")
+    firstProjectDescription.style.opacity = 1
+}
+
+const hideDesc =  () => {  
+    let firstProjectDescription = document.getElementById("firstProjectDescription")
+    firstProjectDescription.style.opacity = 0
+}

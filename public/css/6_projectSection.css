@@ -72,6 +72,7 @@
 
 /*The styling for the containers of the image and the description of a project*/
 .myProjects {  
+    position: relative;
     background: linear-gradient(to bottom right, black, #353d47, black, #353d47, black);
     height: 425px;
     width: 300px;
@@ -85,16 +86,34 @@
     transition: opacity 2s;
 }
 
+/*The picture of the project*/
 .projectPic {
     height: 320px;
     width: 100%;
     border-radius: 3% 3% 0 0;   
 }
 
+#firstProjectDescription {
+    position: absolute;
+    background-color: rgb(0,150,255, 0.8);
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    bottom: 105px;
+    opacity: 0;
+    height: 320px;
+    border-radius: 3% 3% 0 0;  
+}
+
+
+
+/*The title of the Project*/
 .projectName {
     color: magenta;
     margin-top: 30px;
     font-family: cursive;
+    text-align: center;
 }
 
 

@@ -25,13 +25,13 @@ contactForm.addEventListener("submit", (e) => {
     xhr.onload = function (){
         console.log(xhr.responseText) 
         if(xhr.responseText == "success"){
-            alert("Email sent")
+            console.log("Email sent")
             name.value = ""
             email.value = ""
             subject.value = ""
             message.value = ""
         } else {
-            alert("Something went wrong")
+            console.log("Something went wrong")
         }
 
 

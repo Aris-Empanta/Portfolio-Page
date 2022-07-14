@@ -92,7 +92,7 @@
 /*The form submit button*/
 #submitButton {
     border-radius: 10px;
-    background: linear-gradient(to bottom right,magenta, turquoise);
+    background-color: magenta;
     border: none;
     padding-right: 10px;
     padding-left: 10px;
@@ -104,8 +104,12 @@
     right:30px;
     bottom:25px;
     transform: perspective(100px) translateZ(-20px);
-    animation: inOut 3s infinite;
+    animation: inOut 2s infinite;
     animation-timing-function: ease;
+}
+
+#submitButton:hover {
+    background: linear-gradient(to bottom right, magenta, turquoise);
 }
 
 @keyframes inOut {
