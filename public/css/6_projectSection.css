@@ -109,6 +109,14 @@
 
 .projectDescriptionParagraph {
     width : 80%;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: turquoise;
+}
+
+.projectDescriptionParagraph:hover {
+    text-decoration: none;
+    color: turquoise;
 }
 
 /*The title of the Project*/
