@@ -209,8 +209,8 @@
           <div
             id="firstProjectDescription"
             class="projectDescription"
-            onmouseover="showDescription()"
-            onmouseout="hideDescription()"
+            onmouseover="showDescription('firstProjectDescription')"
+            onmouseout="hideDescription('firstProjectDescription')"
           >
             <a
               href="https://aris-empanta.github.io/accountant_webpage/#/"
@@ -219,7 +219,7 @@
               ><p>
                 &nbsp;&nbsp;A static website for a fictional Accountant Office,
                 made with react JS, with no serverside code.<br />
-                &nbsp;&nbsp;Click to see a demo of the deployed website!
+                &nbsp;&nbsp;Click to see a demo of the website!
               </p></a
             >
           </div>
@@ -228,19 +228,33 @@
       </div>
       <div id="project2">
         <div class="myProjects">
-          <img src="./css/Projects_pics/comingSoon.jpg" class="projectPic" />
-          <h3 class="projectName">Coming Soon</h3>
-        </div>
-      </div>
-      <div id="project3">
-        <div class="myProjects">
-          <img src="./css/Projects_pics/comingSoon.jpg" class="projectPic" />
-
-          <h3 class="projectName">Coming Soon</h3>
+          <img
+            src="./css/Projects_pics/cocktails.jpg"
+            class="projectPic"
+            id="secondProjectPic"
+          />
+          <div
+            id="secondProjectDescription"
+            class="projectDescription"
+            onmouseover="showDescription('secondProjectDescription')"
+            onmouseout="hideDescription('secondProjectDescription')"
+          >
+            <a
+              href="https://aris-empanta.github.io/cocktail_recipes/#/"
+              target="_blank"
+              class="projectDescriptionParagraph"
+              ><p>
+                &nbsp;&nbsp;With this app, you can find the recipe of any
+                cocktail, retrieved from the cocktail DB API. <br />Have fun!<br />
+                &nbsp;&nbsp;Click to see a demo of the app!
+              </p></a
+            >
+          </div>
+          <h3 class="projectName">Cocktails Recipes</h3>
         </div>
       </div>
     </div>
-    <!--Project Section-->
+    <!--Contact Section-->
     <div id="contactSection">
       <h1 id="sendMeTitle">
         C<span id="firstBlink">o</span>ntact <span id="secondBlink">m</span>e

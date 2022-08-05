@@ -2,8 +2,8 @@
 #projectsSection {
     display: grid;
     height: 900px;
-    grid-template-areas: "header header header"
-                          "project1 project2 project3";
+    grid-template-areas: "header header"
+                          "project1 project2";
     grid-template-rows: 300px 500px ;
     background-color: #0B0C10;
     border-top: 4px solid turquoise;
@@ -63,12 +63,6 @@
     justify-self: center;   
 }
 
-#project3 {
-    grid-area: project3;
-    align-self: center;
-    justify-self: center;    
-}
-
 
 /*The styling for the containers of the image and the description of a project*/
 .myProjects {  
@@ -107,6 +101,20 @@
     border-radius: 3% 3% 0 0;  
 }
 
+#secondProjectDescription {
+    position: absolute;
+    background-color: rgb(0,0,0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: turquoise;
+    width: 100%;
+    bottom: 105px;
+    opacity: 0;
+    height: 320px;
+    border-radius: 3% 3% 0 0; 
+}
+
 .projectDescriptionParagraph {
     width : 80%;
     font-size: 1.3rem;
@@ -134,7 +142,7 @@
      #projectsSection {
         display: flex;
         flex-direction: column;
-        height: 2000px;
+        height: 1500px;
         gap: 150px;
        justify-content: center;
        align-items: center;                                   
@@ -154,7 +162,7 @@
     /*Adjusting the grid for mobile screens*/
     #projectsSection {
         display: grid;
-        height: 2000px;
+        height: 1500px;
         grid-template-areas: "header"
                               "project1"
                               "project2"
@@ -170,8 +178,7 @@
 /*Below I use media queries to make the grid responsive.*/
 @media all and  (min-width: 1001px) and (max-width: 1500px) {
     /*Adjusting the grid for minimized screens*/
-    #projectsSection {
-        height: 1500px;
+    #projectsSection {        
         display: grid;
         text-align: center;
         grid-template-areas: "header header"

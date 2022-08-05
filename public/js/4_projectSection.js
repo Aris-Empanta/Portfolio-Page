@@ -39,12 +39,12 @@ document.addEventListener('scroll', () => {
 
 //Below 2 functions show and hide the description of each project on hover.
 
-const showDescription =  () => {  
-    let firstProjectDescription = document.getElementById("firstProjectDescription")
+const showDescription =  (description) => {  
+    let firstProjectDescription = document.getElementById(description)
     firstProjectDescription.style.opacity = 1
 }
 
-const hideDescription =  () => {  
-    let firstProjectDescription = document.getElementById("firstProjectDescription")
+const hideDescription =  (description) => {  
+    let firstProjectDescription = document.getElementById(description)
     firstProjectDescription.style.opacity = 0
 }
