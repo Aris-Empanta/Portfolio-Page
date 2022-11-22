@@ -18,13 +18,19 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.json())
 
 app.get("/", (req, res) => {
-  res.sendFile("index.html")
+  try{
+  res.sendFile("index.html") 
+} catch(err) {
+  console.log(err)
+}
 })
 
 app.post("/", (req, res) => {
 
   let transporter = nodemailer.createTransport({
-    service: 'outlook',
+    host: process.env.MAIL_HOST,
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.MAIL,
       pass: process.env.PASS
@@ -35,17 +41,21 @@ app.post("/", (req, res) => {
     from: process.env.MAIL,
     to: 'eams220891@gmail.com',
     subject: req.body.subject,
-    text: `Hello, I am ${req.body.name} with mail : ${req.body.email}! ${req.body.message}`
+    html: `Hello! I am ${req.body.name} ! <br>
+          &nbsp;&nbsp; <b>email</b>: ${ req.body.email } <br>         
+          &nbsp;&nbsp; <b>Message</b>: ${req.body.message} <br>`
   };
 
-  transporter.sendMail(mailOptions, function(error, info){
+  transporter.sendMail(mailOptions)
+  res.sendStatus(204)
+});
+
+app.listen(port, () => console.log("Listening to port 5000"))
+
+/*, function(error, info){
     if (error) {
       console.log(error);
     } else {
       res.send(`<script>alert("Email Sent Successfully.")</script>`);
     }
-  })
-  res.redirect("/#contactSection")
-});
-
-app.listen(port, () => console.log("Listening to port 5000"))
+  }*/

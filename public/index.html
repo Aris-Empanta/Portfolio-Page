@@ -260,7 +260,8 @@
         C<span id="firstBlink">o</span>ntact <span id="secondBlink">m</span>e
       </h1>
       <div id="formContainer">
-        <form id="contactForm" action="/" method="post">
+        <form id="contactForm" action="/" method="post" 
+              autocomplete="off" onsubmit="sendMail()">
           <input
             class="inputFields"
             type="text"
@@ -296,6 +297,5 @@
     <!--Other Javascript files needed-->
     <script src="js/1_navBar.js"></script>
     <script src="js/5_contactSection.js"></script>
-    <!--Php file needed for contact form-->
   </body>
 </html>
