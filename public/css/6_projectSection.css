@@ -1,10 +1,11 @@
 /*Building the project's section grid*/
 #projectsSection {
-    display: grid;
-    height: 900px;
-    grid-template-areas: "header header"
-                          "project1 project2";
-    grid-template-rows: 300px 500px ;
+    display: flex;
+    gap: 100px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
     background-color: #0B0C10;
     border-top: 4px solid turquoise;
     border-bottom: 4px solid turquoise;   
@@ -12,9 +13,9 @@
 
 /*Styling the projects' title background to have a shining animation*/
 #projectTitle {
-    grid-area: header;
-    align-self: center;
-    justify-self: center;  
+    text-align: center;
+    flex-basis: 100%;
+    padding-bottom: 50px;
     background: linear-gradient(to right,
         fuchsia 45%,
         azure 50%, fuchsia 55%,
@@ -22,8 +23,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: rgba(255, 255, 255, 0);
-    background-size: 200%;
-    animation: shine 3s infinite;    
+    background-size: 150%;
+    animation: shine 2s infinite;    
     opacity: 0;
     transition: opacity 2s;
 }
@@ -36,7 +37,7 @@
     }
      
     100% {
-     background-position: -60%;
+     background-position: -50%;
     }
     
 }
@@ -46,45 +47,29 @@
     font-size: 3.5rem;
     font-weight: 500;
     font-family: cursive;
-}
-  
-
-/*Below we adjust one by one the position of each project inside the grid.*/
-
-#project1 {
-    grid-area: project1;
-    align-self: center;
-    justify-self: center;
-}
-
-#project2 {
-    grid-area: project2;
-    align-self: center;
-    justify-self: center;   
-}
-
+}  
 
 /*The styling for the containers of the image and the description of a project*/
 .myProjects {  
     position: relative;
     background: linear-gradient(to bottom right, black, #353d47, black, #353d47, black);
-    height: 425px;
-    width: 300px;
+    height: 460px;
+    width: 350px;
     float: center;
-    border-radius: 3%;
     box-shadow: 10px 10px 3px black;
     transition: transform 1s, opacity 2s;
     cursor: pointer;
     text-decoration: none;  
     opacity: 0;
     transition: opacity 2s;
+    margin-bottom: 50px;
+    max-width: 95%;
 }
 
 /*The picture of the project*/
 .projectPic {
     height: 320px;
-    width: 100%;
-    border-radius: 3% 3% 0 0;   
+    width: 100%; 
 }
 
 #firstProjectDescription {
@@ -95,10 +80,10 @@
     align-items: center;
     color: turquoise;
     width: 100%;
-    bottom: 105px;
-    opacity: 0;
-    height: 320px;
-    border-radius: 3% 3% 0 0;  
+    bottom: 140px;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.5s;
 }
 
 #secondProjectDescription {
@@ -109,10 +94,38 @@
     align-items: center;
     color: turquoise;
     width: 100%;
-    bottom: 105px;
-    opacity: 0;
-    height: 320px;
-    border-radius: 3% 3% 0 0; 
+    bottom: 140px;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.5s;
+}
+
+#thirdProjectDescription {
+    position: absolute;
+    background-color: rgb(0,0,0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: turquoise;
+    width: 100%;
+    bottom: 140px;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.5s;
+}
+
+#fourthProjectDescription {
+    position: absolute;
+    background-color: rgb(0,0,0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: turquoise;
+    width: 100%;
+    bottom: 140px;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.5s;
 }
 
 .projectDescriptionParagraph {
@@ -133,59 +146,58 @@
     margin-top: 30px;
     font-family: cursive;
     text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
 }
+
+#adminDashboard {
+    font-size: 1.2rem;
+}
+
+.demoAndCode {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.liveAppCode {
+    border: 2px solid turquoise;
+    background-color: transparent;
+    color: turquoise;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: font-size 0.2s;
+}
+
+.liveAppCode:focus { /* 1 */
+    border: 2px solid turquoise;
+    outline: none;
+  }
 
 
 
 @media (max-width: 499px){
-     /*Adjusting the grid for mobile screens*/
-     #projectsSection {
-        display: flex;
-        flex-direction: column;
-        height: 1500px;
-        gap: 150px;
-       justify-content: center;
-       align-items: center;                                   
-    }  
+        
     
-    .myProjects {
-        max-width: 85vw;
-    }
-
     #myWorkTitle {
         font-size: 2.5rem;
-        padding-top: 0;
+    }
+
+    .myProjects {
+        width: 98%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #project3 {
+        width: 98%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 1000px){
-    /*Adjusting the grid for mobile screens*/
-    #projectsSection {
-        display: grid;
-        height: 1500px;
-        grid-template-areas: "header"
-                              "project1"
-                              "project2"
-                              "project3";                                   
-    }  
-
+   
     #myWorkTitle {
         font-size: 3rem;
     }
-}
-
-
-/*Below I use media queries to make the grid responsive.*/
-@media all and  (min-width: 1001px) and (max-width: 1500px) {
-    /*Adjusting the grid for minimized screens*/
-    #projectsSection {        
-        display: grid;
-        text-align: center;
-        grid-template-areas: "header header"
-        "project1 project2"
-        "project3 project3";
-    }
-
-   
- 
 }

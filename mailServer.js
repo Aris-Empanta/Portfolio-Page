@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5002
 
 app.use(cors())
 app.set("view engine", "ejs")
@@ -51,11 +51,3 @@ app.post("/", (req, res) => {
 });
 
 app.listen(port, () => console.log("Listening to port 5000"))
-
-/*, function(error, info){
-    if (error) {
-      console.log(error);
-    } else {
-      res.send(`<script>alert("Email Sent Successfully.")</script>`);
-    }
-  }*/

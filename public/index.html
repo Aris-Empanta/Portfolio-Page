@@ -200,57 +200,119 @@
         </h1>
       </div>
       <div id="project1">
-        <div class="myProjects">
+        <div class="myProjects" onmouseover="showDescription('firstProjectDescription')"
+                                onmouseout="hideDescription('firstProjectDescription')">
           <img
-            src="./css/Projects_pics/boston_accountants.jpg"
+            src="./css/Projects_pics/Food_order_app.png"
             class="projectPic"
-            id="firstProjectPic"
+            id="firstProjectPic"            
           />
           <div
             id="firstProjectDescription"
-            class="projectDescription"
-            onmouseover="showDescription('firstProjectDescription')"
-            onmouseout="hideDescription('firstProjectDescription')"
+            class="projectDescription"          
           >
-            <a
-              href="https://aris-empanta.github.io/accountant_webpage/#/"
-              target="_blank"
-              class="projectDescriptionParagraph"
-              ><p>
-                &nbsp;&nbsp;A static website for a fictional Accountant Office,
-                built with React js, with no serverside code.<br />
-                &nbsp;&nbsp;Click to see a demo of the website!
-              </p></a
-            >
+          <p class="projectDescriptionParagraph">
+            &nbsp;&nbsp;An App where a customer can find an
+            interesting fast-food menu and can make his orders
+            online. He can also communicate in real time through a live chat
+            with the restaurateur/admin, or via contact form sended to admin's email.  
+          </p>
           </div>
-          <h3 class="projectName">Boston Accountants</h3>
+          <h3 class="projectName">Food Order App</h3>
+          <div class="demoAndCode">
+            <a href="https://courageous-frangipane-c90c9e.netlify.app/" target="_blank">
+              <button class="liveAppCode">Live App</button>
+            </a>
+            <a href="https://github.com/Aris-Empanta/Food_Order_App" target="_blank">
+              <button class="liveAppCode">Code</button>
+            </a>
+          </div>
         </div>
       </div>
       <div id="project2">
-        <div class="myProjects">
+        <div class="myProjects" onmouseover="showDescription('secondProjectDescription')"
+                                onmouseout="hideDescription('secondProjectDescription')">
           <img
-            src="./css/Projects_pics/cocktails.jpg"
+            src="./css/Projects_pics/Admin_dashboard.png"
             class="projectPic"
-            id="secondProjectPic"
+            id="secondProjectPic"            
           />
           <div
             id="secondProjectDescription"
-            class="projectDescription"
-            onmouseover="showDescription('secondProjectDescription')"
-            onmouseout="hideDescription('secondProjectDescription')"
+            class="projectDescription"            
           >
-            <a
-              href="https://aris-empanta.github.io/cocktail_recipes/#/"
-              target="_blank"
-              class="projectDescriptionParagraph"
-              ><p>
-                &nbsp;&nbsp;With this React app, you can find the recipe of any
-                cocktail, retrieved from the cocktail DB API. <br />Have fun!<br />
-                &nbsp;&nbsp;Click to see a demo of the app!
-              </p></a
-            >
+          <p class="projectDescriptionParagraph">
+            &nbsp;&nbsp;The Admin dashboard of the Food Order
+            App next, where the restaurateur can manage the products,
+            the orders, check his revenue statistics, 
+            and communicate with the customers through live chat.
+          </p>
           </div>
-          <h3 class="projectName">Cocktails Recipes</h3>
+          <h3 class="projectName" id="adminDashboard">Food Order App (Admin Dashboard)</h3>
+          <div class="demoAndCode">
+            <a href="https://6378372e9d407f764d34917b--subtle-nasturtium-5d32c7.netlify.app/" target="_blank">
+              <button class="liveAppCode">Live App</button>
+            </a>
+            <a href="https://github.com/Aris-Empanta/Food_Order_App---Admin_Dashboard" target="_blank">
+              <button class="liveAppCode">Code</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="project3">
+        <div class="myProjects" onmouseover="showDescription('thirdProjectDescription')"
+                                onmouseout="hideDescription('thirdProjectDescription')">
+          <img
+            src="./css/Projects_pics/node_js.png"
+            class="projectPic"
+            id="thirdProjectPic"            
+          />
+          <div
+            id="thirdProjectDescription"
+            class="projectDescription"            
+          >
+          <p class="projectDescriptionParagraph">
+            &nbsp;&nbsp;The common server for the Food Order App and its 
+            Dasboard. It handles the real time data transfer between the 2 apps,
+            the products, the email sending, the invoice pdf creation, and 
+            several other tasks.
+          </p>
+          </div>
+          <h3 class="projectName" id="adminDashboard">Food Order App (Server)</h3>
+          <div class="demoAndCode">
+            <a href="https://github.com/Aris-Empanta/Food_Order_App---Server" target="_blank">
+              <button class="liveAppCode">Code</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="project4">
+        <div class="myProjects" onmouseover="showDescription('fourthProjectDescription')"
+                                onmouseout="hideDescription('fourthProjectDescription')">
+          <img
+            src="./css/Projects_pics/cocktails.jpg"
+            class="projectPic"
+            id="fourthProjectPic"            
+          />
+          <div
+            id="fourthProjectDescription"
+            class="projectDescription"            
+          >
+          <p class="projectDescriptionParagraph">
+            &nbsp;&nbsp; In this app you can find the recipes of over 600 
+            cocktails and beverages. It fetches all the information 
+            from the Cocktail db api.
+          </p>
+          </div>
+          <h3 class="projectName">Cocktail Recipes</h3>
+          <div class="demoAndCode">
+            <a href="https://aris-empanta.github.io/Cocktail_Recipes/" target="_blank">
+              <button class="liveAppCode">Live App</button>
+            </a>
+            <a href="https://github.com/Aris-Empanta/Cocktail_Recipes" target="_blank">
+              <button class="liveAppCode">Code</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

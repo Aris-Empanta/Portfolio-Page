@@ -40,11 +40,11 @@ document.addEventListener('scroll', () => {
 //Below 2 functions show and hide the description of each project on hover.
 
 const showDescription =  (description) => {  
-    let firstProjectDescription = document.getElementById(description)
-    firstProjectDescription.style.opacity = 1
+    let ProjectDescription = document.getElementById(description)
+    ProjectDescription.style.height = "320px"
 }
 
 const hideDescription =  (description) => {  
-    let firstProjectDescription = document.getElementById(description)
-    firstProjectDescription.style.opacity = 0
+    let ProjectDescription = document.getElementById(description)
+    ProjectDescription.style.height = 0
 }
