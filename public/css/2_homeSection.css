@@ -15,11 +15,10 @@
     text-shadow:
       0 0 5px #fff,
       0 0 8px #fff,
-      0 0 16px #fff,
-      0 0 42px turquoise,
-      0 0 82px turquoise,
-      0 0 92px darkcyan,
-      0 0 102px darkcyan;
+      0 0 24px turquoise,
+      0 0 48px turquoise,
+      0 0 62px darkcyan,
+      0 0 70px darkcyan;
     opacity: 0;    
     transition: opacity 1.5s, padding-top 1s; 
   } 
