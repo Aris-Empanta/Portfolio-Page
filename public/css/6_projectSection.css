@@ -38,8 +38,7 @@
      
     100% {
      background-position: -50%;
-    }
-    
+    }    
 }
       
 /*Styling the font of the projects' title.*/  
@@ -47,6 +46,7 @@
     font-size: 3.5rem;
     font-weight: 500;
     font-family: cursive;
+    margin-top: 30px;
 }  
 
 /*The styling for the containers of the image and the description of a project*/
