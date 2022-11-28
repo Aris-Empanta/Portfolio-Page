@@ -1,9 +1,12 @@
 const express = require("express")
 const app = express()
 const nodemailer = require('nodemailer');
+const compression = require("compression")
 const bodyParser = require("body-parser");
 const cors = require("cors")
 const dotenv = require('dotenv').config()
+
+//app.use(compression())
 
 app.use(bodyParser.urlencoded({
   extended: false
